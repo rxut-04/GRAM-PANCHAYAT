@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>सभागृह बैठकांचे छायाचित्र - ग्रामपंचायत</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="gallery.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>ग्रामपंचायत</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">मुख्यपृष्ठ</a>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a href="#" class="nav-link dropdown-toggle">
+                            ग्रामपंचायत छायाचित्रे
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="onboardmeeting.html" class="active">सभागृह बैठकांचे छायाचित्र</a></li>
+                            <li><a href="#mukhyamantri">मुख्यमंत्री समृद्ध पंचायत अभियान</a></li>
+                            <li><a href="#satkar">सत्कार समारंभ छायाचित्रे</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">सेवा</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">संपर्क</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="gallery-main">
+        <div class="container">
+            <div class="page-header">
+                <h1 class="page-title">सभागृह बैठकांचे छायाचित्र</h1>
+                <p class="page-subtitle">ग्रामपंचायत सभागृहातील महत्वाच्या बैठकांचे छायाचित्र संग्रह</p>
+            </div>
+
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Images will be loaded dynamically -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close">&times;</span>
+            <img id="lightbox-img" src="" alt="">
+            <div class="lightbox-caption" id="lightbox-caption"></div>
+            <div class="lightbox-nav">
+                <button id="prev-btn" class="nav-btn"><i class="fas fa-chevron-left"></i></button>
+                <button id="next-btn" class="nav-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 ग्रामपंचायत. सर्व हक्क राखीव.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script src="gallery.js"></script>
+</body>
+</html>
