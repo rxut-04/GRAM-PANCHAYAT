@@ -1,0 +1,1519 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Gram Panchayat — Official Portal</title>
+    <meta
+      name="description"
+      content="Official website of the Gram Panchayat — services, schemes, notices, and contact."
+    />
+
+    <!-- Government Standard Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Preload critical government logos for faster loading -->
+    <link
+      rel="preload"
+      href="images/government-emblem.svg"
+      as="image"
+      type="image/svg+xml"
+      fetchpriority="high"
+    />
+    <link
+      rel="preload"
+      href="images/swachh-bharat-logo.svg"
+      as="image"
+      type="image/svg+xml"
+      fetchpriority="high"
+    />
+    <link
+      rel="preload"
+      href="images/g20-india-logo.svg"
+      as="image"
+      type="image/svg+xml"
+      fetchpriority="high"
+    />
+    <link
+      rel="preload"
+      href="images/digital-india-logo.svg"
+      as="image"
+      type="image/svg+xml"
+      fetchpriority="high"
+    />
+
+    <!-- Preload first slideshow image for better performance -->
+    <link
+      rel="preload"
+      href="images/image1.jpeg"
+      as="image"
+      fetchpriority="high"
+    />
+    
+    <!-- ⚡ SUPERSONIC PERFORMANCE: Preload YouTube thumbnails ⚡ -->
+    <link rel="preconnect" href="https://img.youtube.com" />
+    <link rel="preconnect" href="https://www.youtube.com" />
+    <link rel="dns-prefetch" href="https://img.youtube.com" />
+    <link rel="dns-prefetch" href="https://www.youtube.com" />
+
+    <!-- DNS prefetch for external resources -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+
+    <!-- Resource hints for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to main content</a>
+
+    <!-- Utility bar -->
+    <div class="utility">
+      <div class="container inner">
+        <div class="util-left">
+          <span class="badge" aria-hidden="true"
+            >भारत सरकार · Govt. of India</span
+          >
+          <span class="muted">Accessibility:</span>
+          <div
+            class="a11y-group"
+            role="group"
+            aria-label="Accessibility tools (visual only)"
+          >
+            <button type="button" title="Increase text size">A+</button>
+            <button type="button" title="Decrease text size">A−</button>
+            <button type="button" title="High contrast">HC</button>
+            <button type="button" title="Highlight links">HL</button>
+          </div>
+        </div>
+        <div class="util-right">
+          <nav aria-label="Social media">
+            <ul
+              role="list"
+              style="display: flex; gap: 0.5rem; margin: 0; padding: 0"
+            >
+              <li><a href="#" aria-label="Facebook">FB</a></li>
+              <li><a href="#" aria-label="X">X</a></li>
+              <li><a href="#" aria-label="Instagram">IG</a></li>
+              <li><a href="#" aria-label="YouTube">YT</a></li>
+            </ul>
+          </nav>
+          <div class="lang" aria-label="Language switcher">
+            <a href="#" lang="hi" hreflang="hi">हिन्दी</a>
+            <a href="#" aria-current="page">English</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Government Header -->
+    <header class="gov-header" role="banner">
+      <div class="container gov-header-inner">
+        <!-- Left: Government Emblem -->
+        <div class="gov-emblem">
+          <img
+            src="https://panchayat.gov.in/wp-content/themes/sdo-theme/images/emblem.svg"
+            alt="Government of India National Emblem - सत्यमेव जयते (Truth Alone Triumphs)"
+            class="emblem-img"
+            loading="eager"
+            width="90"
+            height="90"
+            decoding="async"
+            fetchpriority="high"
+          />
+        </div>
+
+        <!-- Center: Ministry Title -->
+        <div class="gov-title">
+          <h1 class="title-hindi">पंचायती राज मंत्रालय</h1>
+          <h2 class="title-english">Ministry of Panchayati Raj</h2>
+          <p class="title-subtitle">Government of India</p>
+        </div>
+
+        <!-- Right: Official Logos -->
+        <div
+          class="gov-logos"
+          role="group"
+          aria-label="Government Initiative Logos"
+        >
+          <img
+            src="images/swachh-bharat-logo.svg"
+            alt="Swachh Bharat Mission - Clean India Campaign Logo"
+            class="logo-img"
+            loading="eager"
+            width="55"
+            height="55"
+            decoding="async"
+            tabindex="0"
+            role="button"
+            aria-describedby="swachh-desc"
+          />
+          <span id="swachh-desc" class="sr-only"
+            >Link to Swachh Bharat Mission information</span
+          >
+          <img
+            src="images/g20-india-logo.svg"
+            alt="G20 India 2023 Presidency Logo"
+            class="logo-img"
+            loading="eager"
+            width="55"
+            height="55"
+            decoding="async"
+            tabindex="0"
+            role="button"
+            aria-describedby="g20-desc"
+          />
+          <span id="g20-desc" class="sr-only"
+            >Link to G20 India presidency information</span
+          >
+          <img
+            src="images/digital-india-logo.svg"
+            alt="Digital India Initiative Logo"
+            class="logo-img"
+            loading="eager"
+            width="55"
+            height="55"
+            decoding="async"
+            tabindex="0"
+            role="button"
+            aria-describedby="digital-desc"
+          />
+          <span id="digital-desc" class="sr-only"
+            >Link to Digital India initiative information</span
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- MOPR Navigation Bar -->
+    <nav class="mopr-nav" role="navigation" aria-label="Main navigation">
+      <div class="nav-inner">
+        <ul class="nav-menu" role="menubar">
+          <li class="nav-item active has-dropdown" role="none">
+            <button
+              class="nav-link dropdown-toggle"
+              role="menuitem"
+              aria-expanded="false"
+              aria-haspopup="true"
+              aria-current="page"
+            >
+              HOME
+              <span class="dropdown-arrow" aria-hidden="true">▼</span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+              <li role="none"><a href="#" role="menuitem">Home Page</a></li>
+              <li role="none"><a href="#" role="menuitem">Site Map</a></li>
+              <li role="none"><a href="#" role="menuitem">Quick Links</a></li>
+              <li role="none"><a href="#" role="menuitem">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="nav-item has-dropdown" role="none">
+            <button
+              class="nav-link dropdown-toggle"
+              role="menuitem"
+              aria-expanded="false"
+              aria-haspopup="true"
+            >
+              ABOUT US
+              <span class="dropdown-arrow" aria-hidden="true">▼</span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+              <li role="none">
+                <a href="#" role="menuitem">About Ministry</a>
+              </li>
+              <li role="none">
+                <a href="#" role="menuitem">Organization Chart</a>
+              </li>
+              <li role="none"><a href="#" role="menuitem">Ministers</a></li>
+              <li role="none"><a href="#" role="menuitem">Officers</a></li>
+            </ul>
+          </li>
+          <li class="nav-item has-dropdown" role="none">
+            <button
+              class="nav-link dropdown-toggle"
+              role="menuitem"
+              aria-expanded="false"
+              aria-haspopup="true"
+            >
+              PANCHAYAT FINANCE
+              <span class="dropdown-arrow" aria-hidden="true">▼</span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+              <li role="none">
+                <a href="#" role="menuitem">Finance Commission</a>
+              </li>
+              <li role="none"><a href="#" role="menuitem">Grants</a></li>
+              <li role="none"><a href="#" role="menuitem">Audit</a></li>
+            </ul>
+          </li>
+          <li class="nav-item has-dropdown" role="none">
+            <button
+              class="nav-link dropdown-toggle"
+              role="menuitem"
+              aria-expanded="false"
+              aria-haspopup="true"
+            >
+              PESA
+              <span class="dropdown-arrow" aria-hidden="true">▼</span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+              <li role="none"><a href="#" role="menuitem">About PESA</a></li>
+              <li role="none"><a href="#" role="menuitem">Guidelines</a></li>
+              <li role="none">
+                <a href="#" role="menuitem">Implementation</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item has-dropdown" role="none">
+            <button
+              class="nav-link dropdown-toggle"
+              role="menuitem"
+              aria-expanded="false"
+              aria-haspopup="true"
+            >
+              PRI
+              <span class="dropdown-arrow" aria-hidden="true">▼</span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+              <li role="none"><a href="#" role="menuitem">About PRI</a></li>
+              <li role="none"><a href="#" role="menuitem">Elections</a></li>
+              <li role="none"><a href="#" role="menuitem">Training</a></li>
+            </ul>
+          </li>
+          <li class="nav-item has-dropdown" role="none">
+            <button
+              class="nav-link dropdown-toggle"
+              role="menuitem"
+              aria-expanded="false"
+              aria-haspopup="true"
+            >
+              RGSA
+              <span class="dropdown-arrow" aria-hidden="true">▼</span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+              <li role="none"><a href="#" role="menuitem">About RGSA</a></li>
+              <li role="none"><a href="#" role="menuitem">Components</a></li>
+              <li role="none"><a href="#" role="menuitem">Guidelines</a></li>
+            </ul>
+          </li>
+          <li class="nav-item has-dropdown" role="none">
+            <button
+              class="nav-link dropdown-toggle"
+              role="menuitem"
+              aria-expanded="false"
+              aria-haspopup="true"
+            >
+              SDG
+              <span class="dropdown-arrow" aria-hidden="true">▼</span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+              <li role="none">
+                <a href="#" role="menuitem">SDG Localization</a>
+              </li>
+              <li role="none"><a href="#" role="menuitem">Indicators</a></li>
+              <li role="none"><a href="#" role="menuitem">Reports</a></li>
+            </ul>
+          </li>
+          <li class="nav-item has-dropdown" role="none">
+            <button
+              class="nav-link dropdown-toggle"
+              role="menuitem"
+              aria-expanded="false"
+              aria-haspopup="true"
+            >
+              PAI
+              <span class="dropdown-arrow" aria-hidden="true">▼</span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+              <li role="none"><a href="#" role="menuitem">About PAI</a></li>
+              <li role="none"><a href="#" role="menuitem">Activities</a></li>
+              <li role="none"><a href="#" role="menuitem">Resources</a></li>
+            </ul>
+          </li>
+          <li class="nav-item has-dropdown" role="none">
+            <button
+              class="nav-link dropdown-toggle"
+              role="menuitem"
+              aria-expanded="false"
+              aria-haspopup="true"
+            >
+              SVAMITVA
+              <span class="dropdown-arrow" aria-hidden="true">▼</span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+              <li role="none">
+                <a href="#" role="menuitem">About SVAMITVA</a>
+              </li>
+              <li role="none">
+                <a href="#" role="menuitem">Property Cards</a>
+              </li>
+              <li role="none"><a href="#" role="menuitem">Land Mapping</a></li>
+              <li role="none"><a href="#" role="menuitem">Guidelines</a></li>
+              <li role="none">
+                <a href="#" role="menuitem">Progress Report</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item has-dropdown" role="none">
+            <button
+              class="nav-link dropdown-toggle"
+              role="menuitem"
+              aria-expanded="false"
+              aria-haspopup="true"
+            >
+              E-GOVERNANCE
+              <span class="dropdown-arrow" aria-hidden="true">▼</span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+              <li role="none"><a href="#" role="menuitem">e-GramSwaraj</a></li>
+              <li role="none"><a href="#" role="menuitem">AuditOnline</a></li>
+              <li role="none"><a href="#" role="menuitem">PFMS</a></li>
+            </ul>
+          </li>
+
+        </ul>
+
+        <!-- Mobile hamburger menu -->
+        <button
+          class="mobile-menu-toggle"
+          aria-label="Toggle mobile menu"
+          aria-expanded="false"
+        >
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </nav>
+
+    <main id="main" tabindex="-1">
+      <!-- Mann Ki Baat Image Slideshow -->
+      <section class="hero" aria-label="Mann Ki Baat Slideshow" role="region">
+        <div
+          class="mann-ki-baat-slideshow"
+          role="img"
+          aria-live="polite"
+          aria-atomic="false"
+          aria-label="Mann Ki Baat slideshow with 5 slides"
+        >
+          <div class="slideshow-container">
+            <!-- Slide 1 - Eager loading for first slide -->
+            <div
+              class="slide active"
+              data-bg-image="images/image1.jpeg"
+              role="img"
+              aria-label="Prime Minister addressing the nation - Slide 1 of 5"
+              aria-hidden="false"
+            >
+              <img
+                src="images/image1.jpeg"
+                alt="Prime Minister addressing the nation"
+                loading="eager"
+                fetchpriority="high"
+                width="1200"
+                height="600"
+                style="
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  z-index: -1;
+                "
+              />
+            </div>
+
+            <!-- Slide 2 - Lazy loading for subsequent slides -->
+            <div
+              class="slide"
+              data-bg-image="images/image2.jpg"
+              role="img"
+              aria-label="Government initiatives and programs - Slide 2 of 5"
+              aria-hidden="true"
+            >
+              <img
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='600'%3E%3Crect width='100%25' height='100%25' fill='%23f0f0f0'/%3E%3C/svg%3E"
+                data-src="images/image2.jpg"
+                alt="Government initiatives and programs"
+                loading="lazy"
+                width="1200"
+                height="600"
+                style="
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  z-index: -1;
+                "
+              />
+            </div>
+
+            <!-- Slide 3 -->
+            <div
+              class="slide"
+              data-bg-image="images/image3.jpg"
+              role="img"
+              aria-label="Rural development and governance - Slide 3 of 5"
+              aria-hidden="true"
+            >
+              <img
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='600'%3E%3Crect width='100%25' height='100%25' fill='%23f0f0f0'/%3E%3C/svg%3E"
+                data-src="images/image3.jpg"
+                alt="Rural development and governance"
+                loading="lazy"
+                width="1200"
+                height="600"
+                style="
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  z-index: -1;
+                "
+              />
+            </div>
+
+            <!-- Slide 4 -->
+            <div
+              class="slide"
+              data-bg-image="images/image4.webp"
+              role="img"
+              aria-label="Digital India and technology initiatives - Slide 4 of 5"
+              aria-hidden="true"
+            >
+              <img
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='600'%3E%3Crect width='100%25' height='100%25' fill='%23f0f0f0'/%3E%3C/svg%3E"
+                data-src="images/image4.webp"
+                alt="Digital India and technology initiatives"
+                loading="lazy"
+                width="1200"
+                height="600"
+                style="
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  z-index: -1;
+                "
+              />
+            </div>
+
+            <!-- Slide 5 -->
+            <div
+              class="slide"
+              data-bg-image="images/image5.webp"
+              role="img"
+              aria-label="Panchayati Raj and local governance - Slide 5 of 5"
+              aria-hidden="true"
+            >
+              <img
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='600'%3E%3Crect width='100%25' height='100%25' fill='%23f0f0f0'/%3E%3C/svg%3E"
+                data-src="images/image5.webp"
+                alt="Panchayati Raj and local governance"
+                loading="lazy"
+                width="1200"
+                height="600"
+                style="
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  z-index: -1;
+                "
+              />
+            </div>
+          </div>
+
+          <!-- Navigation Arrows -->
+          <button
+            class="nav-arrow prev"
+            aria-label="Go to previous slide"
+            id="prevSlide"
+            type="button"
+            aria-describedby="slideshow-help"
+          >
+            <span aria-hidden="true">◀</span>
+            <span class="sr-only">Previous</span>
+          </button>
+          <button
+            class="nav-arrow next"
+            aria-label="Go to next slide"
+            id="nextSlide"
+            type="button"
+            aria-describedby="slideshow-help"
+          >
+            <span aria-hidden="true">▶</span>
+            <span class="sr-only">Next</span>
+          </button>
+
+          <!-- Play/Pause Button -->
+          <button
+            class="play-pause-btn"
+            aria-label="Pause automatic slideshow"
+            id="playPauseBtn"
+            type="button"
+            aria-pressed="false"
+            aria-describedby="slideshow-help"
+          >
+            <span aria-hidden="true">⏸</span>
+            <span class="sr-only">Pause</span>
+          </button>
+
+          <!-- Slide Indicators -->
+          <div
+            class="slide-indicators"
+            role="tablist"
+            aria-label="Slideshow navigation"
+            aria-describedby="slideshow-help"
+          >
+            <button
+              class="indicator active"
+              data-slide="0"
+              role="tab"
+              aria-selected="true"
+              aria-label="Go to slide 1"
+              tabindex="0"
+            ></button>
+            <button
+              class="indicator"
+              data-slide="1"
+              role="tab"
+              aria-selected="false"
+              aria-label="Go to slide 2"
+              tabindex="-1"
+            ></button>
+            <button
+              class="indicator"
+              data-slide="2"
+              role="tab"
+              aria-selected="false"
+              aria-label="Go to slide 3"
+              tabindex="-1"
+            ></button>
+            <button
+              class="indicator"
+              data-slide="3"
+              role="tab"
+              aria-selected="false"
+              aria-label="Go to slide 4"
+              tabindex="-1"
+            ></button>
+            <button
+              class="indicator"
+              data-slide="4"
+              role="tab"
+              aria-selected="false"
+              aria-label="Go to slide 5"
+              tabindex="-1"
+            ></button>
+          </div>
+
+          <!-- News Ticker -->
+          <div
+            class="news-ticker-container"
+            role="marquee"
+            aria-label="Latest news ticker"
+          >
+            <div class="news-ticker" aria-live="off">
+              <div class="news-ticker-label" aria-hidden="true">
+                LATEST NEWS
+              </div>
+              <div
+                class="news-ticker-content"
+                role="status"
+                aria-label="Latest news: Prime Minister to address the nation in Mann Ki Baat on 31st August 2025 at 11:00 AM"
+              >
+                Prime Minister to address the nation in Mann Ki Baat on 31st
+                August 2025 at 11:00 AM • New initiatives for rural development
+                announced • Digital India progress update • Swachh Bharat
+                Mission achievements • G20 India presidency highlights •
+                Panchayati Raj strengthening measures
+              </div>
+            </div>
+          </div>
+
+          <!-- Hidden help text for screen readers -->
+          <div id="slideshow-help" class="sr-only">
+            Use arrow keys to navigate slides, space bar to pause/play, or click
+            the indicators below to jump to a specific slide.
+          </div>
+        </div>
+      </section>
+
+      <!-- MOPR-style Main Content Layout -->
+      <section class="container section section-white">
+        <div class="mopr-content-layout">
+          <!-- Left Column: About MOPR -->
+          <article class="mopr-main-content" aria-labelledby="about-mopr-title">
+            <header class="mopr-content-header">
+              <h2 id="about-mopr-title">About MOPR</h2>
+            </header>
+            <div class="mopr-content-body">
+              <p>
+                The Ministry of Panchayati Raj looks after the ongoing process
+                of decentralization and local governance in the 28 States and 8
+                Union Territories of India, by way of empowering Panchayati Raj
+                Institutions (PRIs), capacity building and rural infrastructure
+                development.
+              </p>
+              <p>
+                The Ministry is responsible for advocacy and coordinated action
+                on policy issues relating to Panchayati Raj, capacity building,
+                incentivization based on performance, monitoring and evaluation,
+                research and knowledge management.
+              </p>
+              <p>
+                The Ministry also looks after the implementation of various
+                schemes and programmes aimed at strengthening the Panchayati Raj
+                system in the country including the Rashtriya Gram Swaraj
+                Abhiyan (RGSA), SVAMITVA scheme, and various other initiatives
+                for rural development and governance.
+              </p>
+              <h3>Key Functions</h3>
+              <ul class="mopr-function-list">
+                <li>
+                  Policy formulation and advocacy for Panchayati Raj
+                  institutions
+                </li>
+                <li>
+                  Capacity building and training of elected representatives
+                </li>
+                <li>
+                  Implementation of flagship schemes like RGSA and SVAMITVA
+                </li>
+                <li>
+                  Monitoring and evaluation of rural governance initiatives
+                </li>
+                <li>Coordination with State Governments on decentralization</li>
+                <li>Research and knowledge management in rural governance</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Right Column: Important Documents -->
+          <aside class="mopr-sidebar" aria-labelledby="sidebar-documents-title">
+            <div class="mopr-sidebar-section">
+              <header class="mopr-sidebar-header">
+                <h2 id="sidebar-documents-title">महत्वपूर्ण दस्तावेज</h2>
+
+                <!-- Remove malformed content -->What’s New</h2>
+              </header>
+              <ul class="mopr-documents-list" role="list">
+                <li class="mopr-document-item">
+                  <a href="PDF'S/202508061325445120.pdf" target="_blank" class="mopr-document-link">
+                    <div class="document-icon">📄</div>
+                    <div class="document-info">
+                      <span class="mopr-document-title">एसडीजी-सुसंगत ग्रामीण विकासासाठी महाराष्ट्र शासन निर्णय (२०१५)</span>
+                      <span class="mopr-document-meta">PDF • सरकारी दस्तावेज</span>
+                    </div>
+                    <div class="document-actions">
+                      <span class="view-icon">👁️</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="mopr-document-item">
+                  <a href="PDF'S/MSPRA TRAINING MODULE FOR STATE 28 AUG 2025.pdf" target="_blank" class="mopr-document-link">
+                    <div class="document-icon">📋</div>
+                    <div class="document-info">
+                      <span class="mopr-document-title">मुख्यमंत्री समृद्ध पंचायत अभियान व पंचायती राज प्रणालीतील SDG स्थानिकीकरण (२०२५)</span>
+                      <span class="mopr-document-meta">PDF • प्रशिक्षण मॉड्यूल</span>
+                    </div>
+                    <div class="document-actions">
+                      <span class="view-icon">👁️</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="mopr-document-item">
+                  <a href="PDF'S/2 MSPRA LOKSAHBHAG  30 AUG 2025.pdf" target="_blank" class="mopr-document-link">
+                    <div class="document-icon">🤝</div>
+                    <div class="document-info">
+                      <span class="mopr-document-title">मुख्यमंत्री समृद्ध पंचायत राज अभियान : पारस्परिक शिक्षण व ज्ञानविनिमयावर आधारित ग्रामपंचायतींचे सक्षमीकरण</span>
+                      <span class="mopr-document-meta">PDF • लोकसहभाग</span>
+                    </div>
+                    <div class="document-actions">
+                      <span class="view-icon">👁️</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="mopr-document-item">
+                  <a href="PDF'S/1 MSPRA SCHEME CONTENT 30 AUG 2025.pdf" target="_blank" class="mopr-document-link">
+                    <div class="document-icon">⭐</div>
+                    <div class="document-info">
+                      <span class="mopr-document-title">मुख्यमंत्री समृद्ध ग्राम पंचायत राज अभियानाचे मूल्यांकन घटक व गुण प्रणाली</span>
+                      <span class="mopr-document-meta">PDF • योजना सामग्री</span>
+                    </div>
+                    <div class="document-actions">
+                      <span class="view-icon">👁️</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="mopr-document-item">
+                  <a href="PDF'S/3 MSPRA IEC  30 AUG 2025.pdf" target="_blank" class="mopr-document-link">
+                    <div class="document-icon">📊</div>
+                    <div class="document-info">
+                      <span class="mopr-document-title">मुख्यमंत्री समृद्ध ग्राम पंचायत अभियानासाठी मूल्यांकन निकष व गुणांकन प्रणालीचे तपशील</span>
+                      <span class="mopr-document-meta">PDF • IEC सामग्री</span>
+                    </div>
+                    <div class="document-actions">
+                      <span class="view-icon">👁️</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <div class="mopr-sidebar-footer">
+                <a href="#" class="mopr-view-all-link">सर्व दस्तावेज पहा →</a>
+              </div>
+            </div>
+
+            <!-- Additional Sidebar Section -->
+            <div class="mopr-sidebar-section">
+              <header class="mopr-sidebar-header">
+                <h3>Quick Links</h3>
+              </header>
+              <ul class="mopr-quick-links" role="list">
+                <li>
+                  <a href="#" class="mopr-quick-link">e-GramSwaraj Portal</a>
+                </li>
+                <li><a href="#" class="mopr-quick-link">SVAMITVA Portal</a></li>
+                <li>
+                  <a href="#" class="mopr-quick-link">Panchayat Awards</a>
+                </li>
+                <li>
+                  <a href="#" class="mopr-quick-link">Training Materials</a>
+                </li>
+                <li>
+                  <a href="#" class="mopr-quick-link">State PRI Portals</a>
+                </li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- Key Services -->
+      <section class="section-featured" aria-labelledby="services-title">
+        <div class="container">
+          <header>
+            <h2 id="services-title">Schemes & Key Services</h2>
+            <p class="muted">
+              Government initiatives for rural development and Panchayati Raj
+              strengthening
+            </p>
+          </header>
+        <div class="grid">
+          <a
+            class="service"
+            href="#"
+            aria-label="RGSA - Rashtriya Gram Swaraj Abhiyan"
+            ><h3>RGSA</h3>
+            <p>
+              Rashtriya Gram Swaraj Abhiyan - Strengthening Panchayati Raj
+              Institutions nationwide
+            </p></a
+          >
+          <a class="service" href="#" aria-label="SVAMITVA Scheme"
+            ><h3>SVAMITVA</h3>
+            <p>
+              Survey of Villages and Mapping with Improvised Technology -
+              Property cards for rural areas
+            </p></a
+          >
+          <a class="service" href="#" aria-label="e-GramSwaraj Portal"
+            ><h3>e‑GramSwaraj</h3>
+            <p>
+              Digital platform for Gram Panchayat planning, accounting, and
+              monitoring activities
+            </p></a
+          >
+          <a class="service" href="#" aria-label="AuditOnline Platform"
+            ><h3>AuditOnline</h3>
+            <p>
+              Online social audit platform ensuring transparency in Panchayat
+              governance
+            </p></a
+          >
+          <a class="service" href="#" aria-label="Panchayat Awards"
+            ><h3>National Panchayat Awards</h3>
+            <p>
+              Rashtriya Gaurav Gram Sabha Puraskar and other excellence
+              recognition programs
+            </p></a
+          >
+          <a class="service" href="#" aria-label="PESA Implementation"
+            ><h3>PESA</h3>
+            <p>
+              Panchayats Extension to Scheduled Areas Act - Empowering tribal
+              self-governance
+            </p></a
+          >
+          <a class="service" href="#" aria-label="SDG Localization"
+            ><h3>SDG Localization</h3>
+            <p>
+              Sustainable Development Goals implementation and monitoring at
+              Panchayat level
+            </p></a
+          >
+          <a class="service" href="#" aria-label="Capacity Building Programs"
+            ><h3>Training & Capacity Building</h3>
+            <p>
+              Skill development programs for elected representatives and
+              Panchayat functionaries
+            </p></a
+          >
+        </div>
+        </div>
+      </section>
+
+      <!-- Important Links -->
+      <section class="section section-light" aria-labelledby="links-title" style="margin-top: 4rem; padding-left: 3rem; padding-right: 3rem;">
+        <div class="container">
+          <header style="text-align: center; margin-bottom: 3rem;">
+            <h2 id="links-title">Important Links</h2>
+            <p>
+              Essential government portals and resources for Panchayati Raj institutions and rural governance
+            </p>
+          </header>
+          
+          <!-- 3 Column Layout -->
+          <div class="links-columns">
+            <!-- Column 1: Government Portals -->
+            <div class="links-column">
+              <h3 class="category-title">
+                <span class="category-icon">🏛️</span>
+                Government Portals
+              </h3>
+              <div class="links-list">
+                <a href="https://www.panchayat.gov.in" class="link-card" target="_blank" rel="noopener noreferrer"></a>
+                  <div class="link-icon">🏛️</div>
+                  <div class="link-content">
+                    <h4>Ministry of Panchayati Raj</h4>
+                    <p>Official MOPR website</p>
+                  </div>
+                  <div class="link-arrow">→</div>
+                </a>
+                
+                <a href="https://egramswaraj.gov.in" class="link-card" target="_blank" rel="noopener noreferrer">
+                  <div class="link-icon">💻</div>
+                  <div class="link-content">
+                    <h4>e-GramSwaraj Portal</h4>
+                    <p>Digital Panchayat platform</p>
+                  </div>
+                  <div class="link-arrow">→</div>
+                </a>
+                
+                <a href="https://svamitva.nic.in" class="link-card" target="_blank" rel="noopener noreferrer">
+                  <div class="link-icon">🗺️</div>
+                  <div class="link-content">
+                    <h4>SVAMITVA Portal</h4>
+                    <p>Village mapping technology</p>
+                  </div>
+                  <div class="link-arrow">→</div>
+                </a>
+                
+                <a href="https://auditonline.gov.in" class="link-card" target="_blank" rel="noopener noreferrer">
+                  <div class="link-icon">📊</div>
+                  <div class="link-content">
+                    <h4>AuditOnline</h4>
+                    <p>Social audit platform</p>
+                  </div>
+                  <div class="link-arrow">→</div>
+                </a>
+              </div>
+            </div>
+
+            <!-- Column 2: Financial Systems -->
+            <div class="links-column">
+              <h3 class="category-title">
+                <span class="category-icon">💰</span>
+                Financial Systems
+              </h3>
+              <div class="links-list">
+                <a href="https://pfms.nic.in" class="link-card" target="_blank" rel="noopener noreferrer">
+                  <div class="link-icon">💳</div>
+                  <div class="link-content">
+                    <h4>PFMS</h4>
+                    <p>Financial management system</p>
+                  </div>
+                  <div class="link-arrow">→</div>
+                </a>
+                
+                <a href="https://fincomindia.nic.in" class="link-card" target="_blank" rel="noopener noreferrer">
+                  <div class="link-icon">🏦</div>
+                  <div class="link-content">
+                    <h4>Finance Commission</h4>
+                    <p>Fund devolution recommendations</p>
+                  </div>
+                  <div class="link-arrow">→</div>
+                </a>
+                
+                <a href="https://nrega.nic.in" class="link-card" target="_blank" rel="noopener noreferrer">
+                  <div class="link-icon">🔨</div>
+                  <div class="link-content">
+                    <h4>MGNREGA</h4>
+                    <p>Employment guarantee portal</p>
+                  </div>
+                  <div class="link-arrow">→</div>
+                </a>
+                
+                <a href="https://pmayg.nic.in" class="link-card" target="_blank" rel="noopener noreferrer">
+                  <div class="link-icon">🏠</div>
+                  <div class="link-content">
+                    <h4>PM Awas Yojana</h4>
+                    <p>Rural housing scheme</p>
+                  </div>
+                  <div class="link-arrow">→</div>
+                </a>
+              </div>
+            </div>
+
+            <!-- Column 3: Information & Services -->
+            <div class="links-column">
+              <h3 class="category-title">
+                <span class="category-icon">📋</span>
+                Information & Services
+              </h3>
+              <div class="links-list">
+                <a href="https://lgdirectory.gov.in" class="link-card" target="_blank" rel="noopener noreferrer">
+                  <div class="link-icon">📍</div>
+                  <div class="link-content">
+                    <h4>Local Government Directory</h4>
+                    <p>Government institutions directory</p>
+                  </div>
+                  <div class="link-arrow">→</div>
+                </a>
+                
+                <a href="https://rtionline.gov.in" class="link-card" target="_blank" rel="noopener noreferrer">
+                  <div class="link-icon">📄</div>
+                  <div class="link-content">
+                    <h4>RTI Online</h4>
+                    <p>Right to Information portal</p>
+                  </div>
+                  <div class="link-arrow">→</div>
+                </a>
+                
+                <a href="https://digitalindia.gov.in" class="link-card" target="_blank" rel="noopener noreferrer">
+                  <div class="link-icon">🇮🇳</div>
+                  <div class="link-content">
+                    <h4>Digital India</h4>
+                    <p>Digital transformation program</p>
+                  </div>
+                  <div class="link-arrow">→</div>
+                </a>
+                
+                <a href="https://mygov.in" class="link-card" target="_blank" rel="noopener noreferrer">
+                  <div class="link-icon">👥</div>
+                  <div class="link-content">
+                    <h4>MyGov</h4>
+                    <p>Citizen engagement platform</p>
+                  </div>
+                  <div class="link-arrow">→</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Documents & Downloads Section -->
+      <section class="container section section-white documents-section" aria-labelledby="documents-title" style="margin-top: 4rem;">
+        <header class="documents-header">
+          <h2 id="documents-title">📄 Documents & Downloads</h2>
+          <p>Access important government documents, schemes, circulars, and forms</p>
+        </header>
+        
+        <div class="documents-grid">
+          <!-- Government Schemes -->
+          <div class="document-category">
+            <h3 class="category-title">🏛️ Government Schemes</h3>
+            <div class="document-list">
+              <div class="document-item">
+                <div class="document-info">
+                  <h4 class="document-title">SVAMITVA Scheme Guidelines</h4>
+                  <p class="document-description">Complete guidelines for Survey of Villages and Mapping with Improvised Technology</p>
+                  <span class="document-meta">PDF • 2.3 MB • Updated: Dec 2024</span>
+                </div>
+                <div class="document-actions">
+                  <a href="documents/schemes/svamitva-guidelines-2024.pdf" class="btn-download" target="_blank" rel="noopener">
+                    <span class="btn-icon">📥</span>
+                    Download
+                  </a>
+                  <a href="documents/schemes/svamitva-guidelines-2024.pdf" class="btn-view" target="_blank" rel="noopener">
+                    <span class="btn-icon">👁️</span>
+                    View
+                  </a>
+                </div>
+              </div>
+              
+              <div class="document-item">
+                <div class="document-info">
+                  <h4 class="document-title">RGSA Implementation Manual</h4>
+                  <p class="document-description">Rashtriya Gram Swaraj Abhiyan - Complete implementation guidelines</p>
+                  <span class="document-meta">PDF • 4.1 MB • Updated: Nov 2024</span>
+                </div>
+                <div class="document-actions">
+                  <a href="documents/schemes/rgsa-manual-2024.pdf" class="btn-download" target="_blank" rel="noopener">
+                    <span class="btn-icon">📥</span>
+                    Download
+                  </a>
+                  <a href="documents/schemes/rgsa-manual-2024.pdf" class="btn-view" target="_blank" rel="noopener">
+                    <span class="btn-icon">👁️</span>
+                    View
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Official Circulars -->
+          <div class="document-category">
+            <h3 class="category-title">📋 Official Circulars</h3>
+            <div class="document-list">
+              <div class="document-item">
+                <div class="document-info">
+                  <h4 class="document-title">Panchayat Election Guidelines 2024</h4>
+                  <p class="document-description">Latest guidelines for conducting Panchayat elections</p>
+                  <span class="document-meta">PDF • 1.8 MB • Updated: Oct 2024</span>
+                </div>
+                <div class="document-actions">
+                  <a href="documents/circulars/election-guidelines-2024.pdf" class="btn-download" target="_blank" rel="noopener">
+                    <span class="btn-icon">📥</span>
+                    Download
+                  </a>
+                  <a href="documents/circulars/election-guidelines-2024.pdf" class="btn-view" target="_blank" rel="noopener">
+                    <span class="btn-icon">👁️</span>
+                    View
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Application Forms -->
+          <div class="document-category">
+            <h3 class="category-title">📝 Application Forms</h3>
+            <div class="document-list">
+              <div class="document-item">
+                <div class="document-info">
+                  <h4 class="document-title">Gram Panchayat Registration Form</h4>
+                  <p class="document-description">Standard form for Gram Panchayat registration and documentation</p>
+                  <span class="document-meta">PDF • 0.5 MB • Form GP-001</span>
+                </div>
+                <div class="document-actions">
+                  <a href="documents/forms/gp-registration-form.pdf" class="btn-download" target="_blank" rel="noopener">
+                    <span class="btn-icon">📥</span>
+                    Download
+                  </a>
+                  <a href="documents/forms/gp-registration-form.pdf" class="btn-view" target="_blank" rel="noopener">
+                    <span class="btn-icon">👁️</span>
+                    View
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Photo Gallery -->
+      <section class="container section section-light photo-gallery-section" aria-labelledby="photos-title" style="margin-top: 4rem;">
+        <header class="gallery-header">
+          <h2 id="photos-title">Photo Gallery</h2>
+          <p>Capturing moments from rural development initiatives and Panchayat activities</p>
+        </header>
+        
+        <div class="gallery-container">
+          <!-- 3 Container Rotating Gallery -->
+          <div class="rotating-gallery-wrapper">
+            <div class="rotating-track" id="rotatingTrack">
+              <!-- Container 1 -->
+              <div class="photo-container">
+                <div class="photo-card">
+                  <img src="images/image1.jpeg" alt="Rural Development Initiative" loading="lazy">
+                  <div class="card-overlay">
+                    <h4>Rural Development</h4>
+                    <p>Community empowerment programs</p>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Container 2 -->
+              <div class="photo-container">
+                <div class="photo-card">
+                  <img src="images/image2.jpg" alt="Community Engagement" loading="lazy">
+                  <div class="card-overlay">
+                    <h4>Community Engagement</h4>
+                    <p>Democratic participation initiatives</p>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Container 3 -->
+              <div class="photo-container">
+                <div class="photo-card">
+                  <img src="images/image3.jpg" alt="Infrastructure Development" loading="lazy">
+                  <div class="card-overlay">
+                    <h4>Infrastructure Development</h4>
+                    <p>Building rural connectivity</p>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Container 4 -->
+              <div class="photo-container">
+                <div class="photo-card">
+                  <img src="images/image4.webp" alt="Healthcare Services" loading="lazy">
+                  <div class="card-overlay">
+                    <h4>Healthcare Services</h4>
+                    <p>Quality healthcare access</p>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Container 5 -->
+              <div class="photo-container">
+                <div class="photo-card">
+                  <img src="images/image5.webp" alt="Education & Training" loading="lazy">
+                  <div class="card-overlay">
+                    <h4>Education & Training</h4>
+                    <p>Skill development programs</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="gallery-footer">
+          <button class="view-all-btn">
+            <span>View All Photos</span>
+            <span class="btn-arrow">→</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- Video Gallery -->
+      <!-- ⚡ SUPERSONIC YOUTUBE VIDEO GALLERY ⚡ -->
+      <section class="video-gallery" aria-labelledby="videos-title">
+        <div class="container">
+          <header>
+            <h2 id="videos-title">🎬 Video Gallery</h2>
+            <p>Watch inspiring stories of rural transformation and community development - Click any video to play!</p>
+          </header>
+          
+          <div class="video-grid">
+            <!-- Video 1: Rural Development Success -->
+            <div class="video-card" data-video-id="dQw4w9WgXcQ" onclick="openVideoModal(this)">
+              <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="Rural Development Success Story" loading="lazy">
+                <div class="play-overlay">
+                  <span>▶</span>
+                </div>
+              </div>
+              <div class="video-info">
+                <h3 class="video-title">Rural Development Success Story</h3>
+                <p class="video-description">Transforming villages through community participation and government schemes. See how local initiatives are making a real difference.</p>
+                <div class="video-meta">
+                  <span class="video-duration">12:45</span>
+                  <span class="video-date">March 2024</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Video 2: Gram Sabha Meeting -->
+            <div class="video-card" data-video-id="jNQXAC9IVRw" onclick="openVideoModal(this)">
+              <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/jNQXAC9IVRw/maxresdefault.jpg" alt="Gram Sabha Meeting Highlights" loading="lazy">
+                <div class="play-overlay">
+                  <span>▶</span>
+                </div>
+              </div>
+              <div class="video-info">
+                <h3 class="video-title">Gram Sabha Meeting Highlights</h3>
+                <p class="video-description">Democratic participation in action - witness how community voices shape local governance and development priorities.</p>
+                <div class="video-meta">
+                  <span class="video-duration">8:32</span>
+                  <span class="video-date">February 2024</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Video 3: Infrastructure Development -->
+            <div class="video-card" data-video-id="M7lc1UVf-VE" onclick="openVideoModal(this)">
+              <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/M7lc1UVf-VE/maxresdefault.jpg" alt="Infrastructure Development Progress" loading="lazy">
+                <div class="play-overlay">
+                  <span>▶</span>
+                </div>
+              </div>
+              <div class="video-info">
+                <h3 class="video-title">Infrastructure Development Progress</h3>
+                <p class="video-description">Building roads for rural connectivity - see how improved infrastructure is connecting remote villages to opportunities.</p>
+                <div class="video-meta">
+                  <span class="video-duration">6:18</span>
+                  <span class="video-date">January 2024</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Video 4: Healthcare Camp -->
+            <div class="video-card" data-video-id="ZZ5LpwO-An4" onclick="openVideoModal(this)">
+              <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/ZZ5LpwO-An4/maxresdefault.jpg" alt="Healthcare Camp Success" loading="lazy">
+                <div class="play-overlay">
+                  <span>▶</span>
+                </div>
+              </div>
+              <div class="video-info">
+                <h3 class="video-title">Healthcare Camp Success</h3>
+                <p class="video-description">Bringing quality healthcare to villages - mobile medical units and specialist camps serving rural communities.</p>
+                <div class="video-meta">
+                  <span class="video-duration">10:25</span>
+                  <span class="video-date">December 2023</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Video 5: Skill Development -->
+            <div class="video-card" data-video-id="ALZHF5UqnU4" onclick="openVideoModal(this)">
+              <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/ALZHF5UqnU4/maxresdefault.jpg" alt="Skill Development Training" loading="lazy">
+                <div class="play-overlay">
+                  <span>▶</span>
+                </div>
+              </div>
+              <div class="video-info">
+                <h3 class="video-title">Skill Development Training</h3>
+                <p class="video-description">Empowering youth with new skills - vocational training programs creating employment opportunities in rural areas.</p>
+                <div class="video-meta">
+                  <span class="video-duration">14:52</span>
+                  <span class="video-date">November 2023</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Video 6: Digital India Initiative -->
+            <div class="video-card" data-video-id="HEXWRTEbj1I" onclick="openVideoModal(this)">
+              <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/HEXWRTEbj1I/maxresdefault.jpg" alt="Digital India in Villages" loading="lazy">
+                <div class="play-overlay">
+                  <span>▶</span>
+                </div>
+              </div>
+              <div class="video-info">
+                <h3 class="video-title">Digital India in Villages</h3>
+                <p class="video-description">Technology transforming rural governance - e-services, digital payments, and online government services reaching every village.</p>
+                <div class="video-meta">
+                  <span class="video-duration">9:15</span>
+                  <span class="video-date">October 2023</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ⚡ YOUTUBE VIDEO MODAL - FULLY FUNCTIONAL ⚡ -->
+      <div class="video-modal" id="videoModal" onclick="closeVideoModal(event)">
+        <div class="video-modal-content">
+          <button class="modal-close" onclick="closeVideoModal()" aria-label="Close video">×</button>
+          <iframe id="videoFrame" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ⚡ SUPERSONIC DARK FOOTER - SEPHORA STYLE ⚡ -->
+    <footer class="modern-footer">
+      <div class="footer-main">
+        <div class="container">
+          <div class="footer-columns">
+            
+            <!-- Column 1: About MOPR -->
+            <div class="footer-column">
+              <h3 class="footer-heading">About MOPR</h3>
+              <ul class="footer-list">
+                <li><a href="#">About Ministry</a></li>
+                <li><a href="#">Newsroom</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Social Impact</a></li>
+                <li><a href="#">Affiliates</a></li>
+                <li><a href="#">Supply Chain</a></li>
+                <li><a href="#">Sitemap</a></li>
+                <li><a href="#">Global Sites</a></li>
+                <li><a href="#">Panchayat</a></li>
+              </ul>
+            </div>
+
+            <!-- Column 2: My Account -->
+            <div class="footer-column">
+              <h3 class="footer-heading">My Account</h3>
+              <ul class="footer-list">
+                <li><a href="#">My Account</a></li>
+                <li><a href="#">Order Status</a></li>
+                <li><a href="#">Citizen Portal</a></li>
+                <li><a href="#">Rewards Bazaar</a></li>
+                <li><a href="#">Loves</a></li>
+                <li><a href="#">Pay by MOPR</a></li>
+                <li><a href="#">Flash Services</a></li>
+                <li><a href="#">Download App</a></li>
+              </ul>
+            </div>
+
+            <!-- Column 3: Help & FAQs -->
+            <div class="footer-column">
+              <h3 class="footer-heading">Help & FAQs</h3>
+              <ul class="footer-list">
+                <li><a href="#">Online Ordering</a></li>
+                <li><a href="#">Shipping</a></li>
+                <li><a href="#">Billing</a></li>
+                <li><a href="#">Returns & Exchanges</a></li>
+                <li><a href="#">International Shipments</a></li>
+                <li><a href="#">Customer Service</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Accessibility</a></li>
+              </ul>
+            </div>
+
+            <!-- Column 4: Ways to Connect -->
+            <div class="footer-column">
+              <h3 class="footer-heading">Ways to Connect</h3>
+              <ul class="footer-list">
+                <li><a href="#">Just Arrived</a></li>
+                <li><a href="#">Bestsellers</a></li>
+                <li><a href="#">Gift Cards</a></li>
+                <li><a href="#">Store Locations</a></li>
+                <li><a href="#">Book Reservation</a></li>
+                <li><a href="#">MOPR Inside JCPenney</a></li>
+                <li><a href="#">MOPR + Google Home</a></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Section -->
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="footer-bottom-content">
+            
+            <!-- Newsletter Signup -->
+            <div class="newsletter-section">
+              <label for="newsletter-email" class="newsletter-label">Sign up for MOPR Emails</label>
+              <div class="newsletter-form">
+                <input 
+                  type="email" 
+                  id="newsletter-email" 
+                  placeholder="Email address" 
+                  class="newsletter-input"
+                  aria-label="Enter your email address"
+                >
+                <button type="submit" class="newsletter-button" aria-label="Subscribe to newsletter">
+                  <span>→</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Region Selector -->
+            <div class="region-section">
+              <label for="region-select" class="region-label">Choose Region:</label>
+              <div class="region-selector">
+                <select id="region-select" class="region-select" aria-label="Choose your region">
+                  <option value="india">India</option>
+                  <option value="us">United States</option>
+                  <option value="uk">United Kingdom</option>
+                  <option value="canada">Canada</option>
+                </select>
+                <span class="select-arrow">▼</span>
+              </div>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="social-section">
+              <div class="social-links">
+                <a href="#" class="social-link facebook" aria-label="Follow us on Facebook">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                  </svg>
+                </a>
+                <a href="#" class="social-link twitter" aria-label="Follow us on Twitter">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                  </svg>
+                </a>
+                <a href="#" class="social-link instagram" aria-label="Follow us on Instagram">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                  </svg>
+                </a>
+                <a href="#" class="social-link youtube" aria-label="Follow us on YouTube">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                  </svg>
+                </a>
+                <a href="#" class="social-link pinterest" aria-label="Follow us on Pinterest">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.001z"/>
+                  </svg>
+                </a>
+                <a href="#" class="social-link google" aria-label="Follow us on Google">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                    <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                    <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                    <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                  </svg>
+                </a>
+                <a href="#" class="social-link tumblr" aria-label="Follow us on Tumblr">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M14.563 24c-5.093 0-7.031-3.756-7.031-6.411V9.747H5.116V6.648c3.63-1.313 4.512-4.596 4.71-6.469C9.84.051 9.941 0 9.999 0h3.517v6.114h4.801v3.633h-4.82v7.47c.016 1.001.375 2.371 2.207 2.371h.09c.631-.02 1.486-.205 1.936-.419l1.156 3.425c-.436.636-2.4 1.374-4.156 1.404h-.178l.011.002z"/>
+                  </svg>
+                </a>
+                <a href="#" class="social-link more" aria-label="More social links">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright Section -->
+      <div class="footer-copyright">
+        <div class="container">
+          <div class="copyright-content">
+            <p>© <span id="yr"></span> Ministry of Panchayati Raj, Government of India. All rights reserved.</p>
+            <div class="footer-policies">
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms of Use</a>
+              <a href="#">Accessibility</a>
+              <a href="#">Sitemap</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+<script src="script.js"></script>
+  </body>
+</html>
