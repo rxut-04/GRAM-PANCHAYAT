@@ -32,35 +32,35 @@ class GalleryManager {
     }
 
     async getSampleImages() {
-        // Sample images - replace with actual image loading logic
+        // Load actual images from GRAM-MEETING-IMAGES folder
         return [
             {
-                src: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',
+                src: '../GRAM-MEETING-IMAGES/image.png',
                 title: 'ग्रामसभा बैठक - जानेवारी २०२४',
                 description: 'मासिक ग्रामसभेची बैठक ज्यामध्ये विकास कामांची चर्चा झाली'
             },
             {
-                src: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800',
+                src: '../GRAM-MEETING-IMAGES/IMG-20250904-WA0014.jpg',
                 title: 'बजेट चर्चा सभा',
                 description: 'वार्षिक बजेटच्या चर्चेसाठी आयोजित विशेष सभा'
             },
             {
-                src: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800',
+                src: '../GRAM-MEETING-IMAGES/IMG-20250904-WA0015.jpg',
                 title: 'पाणी पुरवठा योजना बैठक',
                 description: 'गावातील पाणी पुरवठा सुधारणेसाठी आयोजित बैठक'
             },
             {
-                src: 'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=800',
+                src: '../GRAM-MEETING-IMAGES/IMG-20250904-WA0016.jpg',
                 title: 'रस्ते विकास चर्चा',
                 description: 'गावातील रस्त्यांच्या दुरुस्तीसाठी नियोजन बैठक'
             },
             {
-                src: 'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800',
+                src: '../GRAM-MEETING-IMAGES/IMG-20250904-WA0017.jpg',
                 title: 'शिक्षण समिती बैठक',
                 description: 'गावातील शाळांच्या सुविधा सुधारणेसाठी चर्चा'
             },
             {
-                src: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800',
+                src: '../GRAM-MEETING-IMAGES/IMG-20250904-WA0018.jpg',
                 title: 'आरोग्य योजना सभा',
                 description: 'ग्रामीण आरोग्य सेवा सुधारणेसाठी विशेष बैठक'
             }
