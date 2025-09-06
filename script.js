@@ -1,5 +1,4 @@
-
-      // small enhancement — update year automatically
+// small enhancement — update year automatically
       document.getElementById("yr").textContent = new Date().getFullYear();
 
       // MOPR Navigation functionality
@@ -1523,6 +1522,31 @@
             `);
           }
         }, 2000);
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to navbar
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 100) {
+                navbar.style.background = 'linear-gradient(135deg, rgba(102, 126, 234, 0.95) 0%, rgba(118, 75, 162, 0.95) 100%)';
+                navbar.style.backdropFilter = 'blur(10px)';
+            } else {
+                navbar.style.background = 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
+                navbar.style.backdropFilter = 'none';
+            }
+        });
       });
 
       // ⚡ SUPERSONIC YOUTUBE VIDEO FUNCTIONALITY ⚡
@@ -1721,4 +1745,3 @@
           iframe.parentNode.appendChild(errorMessage);
         });
       });
-
